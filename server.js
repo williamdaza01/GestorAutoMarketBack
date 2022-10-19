@@ -12,7 +12,7 @@ const db = admin.firestore();
 
 app.use(express.json());
 
-app.user(express.urlencoded({extended: true}));
+app.use(express.urlencoded({extended: true}));
 
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
